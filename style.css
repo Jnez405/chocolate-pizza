@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+header {
+    background: #fff;
+    padding: 10px 0;
+}
+
+.header-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust the width to match the height of the text */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.header-text {
+    margin-left: 10px;
+}
+
+.header-text p {
+    font-family: 'Yellowtail', cursive;
+    font-size: 100px; /* Adjust the font size to match the logo height */
+    margin-top: 20px;
+    line-height: 60px; /* Ensure the text is vertically centered with the logo */
+}
+
+.header-text strong {
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    color: #777;
+    margin-left: 10px;
+    display: block;
+    margin-top: 0px; /* Adjust this value to reduce the space between "Delicious" and the small grey text */
+    line-height: 1.7; /* Adjust line height if needed */
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+
+.header-right img {
+    width: 50px;
+}
+
+.decorative-border {
+    background-image: url('img/hr-img.png');
+    background-size: 10px 10px; /* Set the size of the background image */
+    background-repeat: repeat; /* Make the image repeat to fill the div */
+    height: 30px; /* Adjust this value to control the height of the section */
+    margin: 10px 0;
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.article-header {
+    margin-bottom: 20px;
+}
+
+.article-header header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.article-header h1 {
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 90px;
+    color: #000000;
+    font-weight: 700;
+    margin: 0;
+}
+
+.post-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: #afafaf;
+    margin-top: -30px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+}
+
+.print-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.print-icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+.article-header figure img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content p {
+    font-family: 'Roboto Slab', serif;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.ingredients {
+    position: relative;
+    background-image: url('img/list-bg.png');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-repeat: no-repeat;
+    background-position: left center; /* Align the background image to the left */
+    padding: 20px; /* Add padding if needed to fit the content within the boundaries */
+    height: 400px; /* Adjust the height to fit your background image */
+    width: 100%; /* Make it responsive */
+    box-sizing: border-box; /* Include padding within the width and height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+}
+
+.ingredients-bg {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10px; /* Space between items */
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: contents; /* Use display contents to keep grid layout */
+}
+
+.ingredients-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 50px; /* Adjust this value to set the left margin */
+    font-size: 20px;
+}
+
+.ingredients-list input {
+    margin-right: 10px;
+}
+
+.ingredients-list label.checked {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+}
+
+.author-section figure img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.author-info {
+    flex: 1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+}
+
+.author-info h2 {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 35px; 
+}
+
+.share-button {
+    display: inline-block;
+    background-color: rgb(201, 105, 67);
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 300; /* Thin font */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Add space above the button */
+    border: none; /* Remove border if it's a button element */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.share-button:hover {
+    background-color: darkorange; /* Optional: change color on hover */
+}
+
+
+footer {
+    background: #ffffff;
+    color: #919191;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer img {
+    width: 50px;
+    margin: 0 20px; /* Adjust as needed to add space between the lines and the image */
+    vertical-align: middle;
+    position: relative;
+    z-index: 1; /* Ensure the image is above the lines */
+}
+
+footer::before, footer::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 37%; /* Adjust the width of the lines */
+    height: 1px;
+    background: grey;
+}
+
+footer::before {
+    left: 0;
+    margin-left: 10%;
+}
+
+footer::after {
+    right: 0;
+    margin-right: 10%;
+    
+}

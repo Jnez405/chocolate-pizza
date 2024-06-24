@@ -13,6 +13,6 @@
 
 ![Home Page](https://raw.githubusercontent.com/Jnez405/chocolate-pizza/main/img/ss-choco-pizza.png)
 
-Had trouble with my OG sales data table deleting with the new form addition, fixed it by sticking with the DRY principles. 
+This assignment made me realize how much progress I've made and improved my understanding of how elements work together. However, I struggled with getting the list items to fit within the boundaries of the image.
 
 ### Author: Jesus O.
